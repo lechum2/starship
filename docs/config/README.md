@@ -4387,17 +4387,17 @@ By default the module will be shown if any of the following conditions are met:
 symbol = '🌟 '
 ```
 
-## Salesforce
+## Salesforce CLI
 
-By default the `salesforce` module shows the currently installed version of [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli).
+By default the `salesforce_cli` module shows the currently installed version of [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli).
 The module will be shown if the current directory contains a `sfdx-project.json` file.
 
 ### Options
 
 | Option           | Default                              | Description                                                               |
 | ---------------- | ------------------------------------ | ------------------------------------------------------------------------- |
-| `format`         | `'via [$symbol($version )]($style)'` | The format for the module.                                                |
-| `version_format` | `'v${raw}'`                          | The version format. Available vars are `raw`, `major`, `minor`, & `patch` |
+| `format`         | `'via [$symbol($version)]($style)'` | The format for the module.                                                |
+| `version_format` | `'v${raw}'`                          | The version format. Available vars are `raw`, `major`, `minor` |
 | `symbol`         | `' '`                               | A format string representing the symbol of Salesforce CLI |
 | `detect_files`   | `['sfdx-project.json']`              | Which filenames should trigger this module.                               |
 | `style`          | `'bold blue'`                        | The style for the module.                                                 |
@@ -4407,9 +4407,7 @@ The module will be shown if the current directory contains a `sfdx-project.json`
 
 | Variable  | Example           | Description                                  |
 | --------- | ----------------- | -------------------------------------------- |
-| version   | `v1.43.0-nightly` | The version of `rustc`                       |
-| numver    | `1.51.0`          | The numeric component of the `rustc` version |
-| toolchain | `beta`            | The toolchain version                        |
+| version | `1.51.0`          | Version of Salesforce CLI                   |
 | symbol    |                   | Mirrors the value of option `symbol`         |
 | style\*   |                   | Mirrors the value of option `style`          |
 
@@ -4420,43 +4418,7 @@ The module will be shown if the current directory contains a `sfdx-project.json`
 ```toml
 # ~/.config/starship.toml
 
-[rust]
-format = 'via [⚙️ $version](red bold)'
-```
-## Salesforce org
-
-By default the `salesforce org` module shows the currently configured target org.
-The module will be shown if the current directory contains a `.sf/config.json` file.
-
-### Options
-
-| Option           | Default                              | Description                                                               |
-| ---------------- | ------------------------------------ | ------------------------------------------------------------------------- |
-| `format`         | `'with [$org_symbol($org)]($style)'` | The format for the module.                                                |
-| `org_format`     | `'${org}'`                          | The version format. Available vars are `raw`, `major`, `minor`, & `patch` |
-| `symbol`         | `'󰢎 '`                               | A format string representing the symbol of Salesforce org |
-| `detect_files`   | `['.sf/config.json']`              | Which filenames should trigger this module.                               |
-| `style`          | `'bold cyan'`                        | The style for the module.                                                 |
-| `disabled`       | `false`                              | Disables the `salesforce` module.                                         |
-
-### Variables
-
-| Variable  | Example           | Description                                  |
-| --------- | ----------------- | -------------------------------------------- |
-| version   | `v1.43.0-nightly` | The version of `rustc`                       |
-| numver    | `1.51.0`          | The numeric component of the `rustc` version |
-| toolchain | `beta`            | The toolchain version                        |
-| symbol    |                   | Mirrors the value of option `symbol`         |
-| style\*   |                   | Mirrors the value of option `style`          |
-
-*: This variable can only be used as a part of a style string
-
-### Example
-
-```toml
-# ~/.config/starship.toml
-
-[rust]
+[salesfore_cli]
 format = 'via [⚙️ $version](red bold)'
 ```
 
