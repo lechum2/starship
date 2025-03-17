@@ -325,6 +325,7 @@ $rlang\
 $red\
 $ruby\
 $rust\
+$salesforce_cli\
 $scala\
 $solidity\
 $swift\
