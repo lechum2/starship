@@ -4398,7 +4398,7 @@ The module will be shown if the current directory contains a `.sf/config.json` f
 | ---------------- | ------------------------------------ | ------------------------------------------------------------------------- |
 | `format`         | `'with [$symbol($org)]($style)'` | The format for the module.                                                |
 | `org_format`     | `'${org}'`                          | The version format. Available vars are `raw`, `major`, `minor`, & `patch` |
-| `symbol`         | `'󰢎 '`                               | A format string representing the symbol of Salesforce org. |
+| `symbol`         | `'🍁 '`                               | A format string representing the symbol of Salesforce default org. |
 | `detect_files`   | `['.sf/config.json']`              | Which filenames should trigger this module.                               |
 | `style`          | `'bold cyan'`                        | The style for the module.                                                 |
 | `disabled`       | `false`                              | Disables the `salesforce` module.                                         |
