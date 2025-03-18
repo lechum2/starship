@@ -107,6 +107,7 @@ pub const PROMPT_ORDER: &[&str] = &[
     "red",
     "ruby",
     "rust",
+    "salesforce_cli",
     "scala",
     "solidity",
     "swift",

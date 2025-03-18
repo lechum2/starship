@@ -86,6 +86,7 @@ mod red;
 mod rlang;
 mod ruby;
 mod rust;
+mod salesforce_cli;
 mod scala;
 mod shell;
 mod shlvl;
@@ -210,6 +211,7 @@ pub fn handle<'a>(module: &str, context: &'a Context) -> Option<Module<'a>> {
             "red" => red::module(context),
             "ruby" => ruby::module(context),
             "rust" => rust::module(context),
+            "salesforce_cli" => salesforce_cli::module(context),
             "scala" => scala::module(context),
             "shell" => shell::module(context),
             "shlvl" => shlvl::module(context),
@@ -351,6 +353,7 @@ pub fn description(module: &str) -> &'static str {
         "rlang" => "The currently installed version of R",
         "ruby" => "The currently installed version of Ruby",
         "rust" => "The currently installed version of Rust",
+        "salesforce_cli" => "The currently installed version of Salesforce CLI",
         "scala" => "The currently installed version of Scala",
         "shell" => "The currently used shell indicator",
         "shlvl" => "The current value of SHLVL",
