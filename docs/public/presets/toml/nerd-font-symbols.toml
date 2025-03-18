@@ -265,6 +265,9 @@ symbol = " "
 [rust]
 symbol = "󱘗 "
 
+[salesforce_cli]
+symbol = " "
+
 [scala]
 symbol = " "
 

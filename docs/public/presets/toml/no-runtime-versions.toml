@@ -141,6 +141,9 @@ format = 'via [$symbol]($style)'
 [scala]
 format = 'via [$symbol]($style)'
 
+[salesforce_cli]
+format = 'via [$symbol]($style)'
+
 [solidity]
 format = 'via [$symbol]($style)'
 

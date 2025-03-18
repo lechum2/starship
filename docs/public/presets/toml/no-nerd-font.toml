@@ -18,3 +18,9 @@ symbol = "[⬢](bold green) "
 
 [pulumi]
 symbol = "🧊 "
+
+[salesforce_cli]
+symbol = "☁ "
+
+[typst]
+symbol = "t "

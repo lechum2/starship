@@ -243,6 +243,12 @@ symbol = "⊃ "
 version_format = "${raw}"
 style = "bold red"
 
+[salesforce_cli]
+format = " [sf](italic) [$symbol$version]($style)"
+symbol = "◠ "
+version_format = "${raw}"
+style = "bold blue"
+
 [package]
 format = " [pkg](italic dimmed) [$symbol$version]($style)"
 version_format = "${raw}"
