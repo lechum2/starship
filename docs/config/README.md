@@ -4395,22 +4395,22 @@ The module will be shown if the current directory contains a `sfdx-project.json`
 
 ### Options
 
-| Option           | Default                              | Description                                                               |
-| ---------------- | ------------------------------------ | ------------------------------------------------------------------------- |
-| `format`         | `'via [$symbol($version)]($style)'` | The format for the module.                                                |
-| `version_format` | `'v${raw}'`                          | The version format. Available vars are `raw`, `major`, `minor` |
-| `symbol`         | `' '`                               | A format string representing the symbol of Salesforce CLI |
-| `detect_files`   | `['sfdx-project.json']`              | Which filenames should trigger this module.                               |
-| `style`          | `'bold blue'`                        | The style for the module.                                                 |
-| `disabled`       | `false`                              | Disables the `salesforce` module.                                         |
+| Option           | Default                             | Description                                                    |
+| ---------------- | ----------------------------------- | -------------------------------------------------------------- |
+| `format`         | `'via [$symbol($version)]($style)'` | The format for the module.                                     |
+| `version_format` | `'v${raw}'`                         | The version format. Available vars are `raw`, `major`, `minor` |
+| `symbol`         | `' '`                              | A format string representing the symbol of Salesforce CLI      |
+| `detect_files`   | `['sfdx-project.json']`             | Which filenames should trigger this module.                    |
+| `style`          | `'bold blue'`                       | The style for the module.                                      |
+| `disabled`       | `false`                             | Disables the `salesforce` module.                              |
 
 ### Variables
 
-| Variable  | Example           | Description                                  |
-| --------- | ----------------- | -------------------------------------------- |
-| version | `1.51.0`          | Version of Salesforce CLI                   |
-| symbol    |                   | Mirrors the value of option `symbol`         |
-| style\*   |                   | Mirrors the value of option `style`          |
+| Variable | Example  | Description                          |
+| -------- | -------- | ------------------------------------ |
+| version  | `1.51.0` | Version of Salesforce CLI            |
+| symbol   |          | Mirrors the value of option `symbol` |
+| style\*  |          | Mirrors the value of option `style`  |
 
 *: This variable can only be used as a part of a style string
 
